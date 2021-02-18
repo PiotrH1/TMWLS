@@ -34,9 +34,7 @@ function checkItem () {
     });
     $(this).remove();
 }
-
-
-
+//TODO next step , adopt this logic to send AJAX to API or Server and save data in DB
 $(document).ready(function () {
 
     for (var i in taskArray) {
@@ -74,29 +72,3 @@ $(document).ready(function () {
     })
 }
 )
-
-
-//$(".txt").on("keyup", function (e) {
-//    // If I KeyUp from Enter button and  text value not equal to null
-//    if (e.keyCode == 13 && $(".txt").val() != 0) {
-//        var task = $("<div class='task'></div>").text($(".txt").val());
-
-//        var del = $("<i class='fas fa-trash-alt'></i>").click(function () {
-//            var p = $(this).parent();
-//            p.fadeOut(function () {
-//                p.remove();
-//            })
-//        });
-//        var check = $(" <i class='fas fa-check'></i>").click(function () {
-//            var p = $(this).parent();
-//            p.fadeOut(function () {
-//                $(".completed").append(p);
-//                p.fadeIn();
-//            });
-//            $(this).remove();
-//        });
-//        task.append(del, check);
-//        $(".notCompleted").append(task);
-//        $(".txt").val("");
-//    }
-//});
